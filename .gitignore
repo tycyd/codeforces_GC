@@ -1,1 +1,8 @@
 **/*.exe
+**/*.ilk
+**/*.obj
+**/*.pdb
+**/*.dSYM
+**/*_exe
+.vscode/launch.json
+.vscode/tasks.json
