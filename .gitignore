@@ -2,3 +2,5 @@
 **/*.ilk
 **/*.obj
 **/*.pdb
+.vscode/launch.json
+.vscode/tasks.json
