@@ -34,8 +34,9 @@
 
 using namespace std;
 
-int t, n, ans, k;
-int b[200001];
+int t, n;
+long long k, ans;
+long long b[200001];
 map<long long, long long> mp;
 long long MOD = 1000000007;
 /*
@@ -65,9 +66,9 @@ void solve() {
         
 
         // a[i]=a[1]+a[2]...a[i-1]
-        // dp[i][0->j] => dp[i+1][b[i]]
+        // dp[i][ALL] - dp[i][0] => dp[i+1][b[i]]
         
-        int a = mp[k];
+        long long a = mp[k];
         mp[k] = ans;
         k -= b[i];
         ans = (2 * ans - a + MOD) % MOD;
